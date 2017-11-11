@@ -66,8 +66,9 @@ const App = new Lang.Class({
 		let f1Label = new Gtk.Label({ label: _("Icon Size"),                                                                                    hexpand: true, halign: Gtk.Align.START });
 		let f2Label = new Gtk.Label({ label: _("Position on the Panel"),                                                                        hexpand: true, halign: Gtk.Align.START });
 		// let f3Label = new Gtk.Label({ label: _("How Often to check for Update (in mins)"),                                                      hexpand: true, halign: Gtk.Align.START });
-		let llLabel = new Gtk.Label({ label: _("--------------------------------------------------------------------------------------------"), hexpand: true, halign: Gtk.Align.START });
-		let lrLabel = new Gtk.Label({ label: _("------------------------"),                                                                     hexpand: true, halign: Gtk.Align.START });
+		let llLabel = new Gtk.Label({ label: _("---------------------------------------------------------------------------------------------------------------------"), 
+																			hexpand: true, halign: Gtk.Align.START });
+		let lrLabel = new Gtk.Label({ label: _("---------------------------------"),                                                            hexpand: true, halign: Gtk.Align.START });
 		let mgLabel = new Gtk.Label({ label: _(""),                                                                                             hexpand: true, halign: Gtk.Align.START });
 		
 		mgLabel.set_markup('<a href="https://github.com/yomun/gnome-backup-tools">https://github.com/yomun/gnome-backup-tools</a>\n');
