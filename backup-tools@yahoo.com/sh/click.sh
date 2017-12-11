@@ -12,7 +12,7 @@ CNT=$((CNT_B + CNT_R))
 
 if [ ${CNT} -le 2 ]
 then
-	if [ -f "/home/${USER}/gnome_shell_extensions_id.txt" ]
+	if [ -f "/home/${USER}/.gnome_shell_extensions_id.txt" ]
 	then
 		bash ${SHELL_PATH}/retrieve-gnome-extension.sh
 		notify-send -i "${DATA_PATH}/icon.png" "Backup Tools" "Retrieve GNOME Shell Extensions successfully."
