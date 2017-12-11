@@ -27,8 +27,8 @@ do
 	fi
 done
 
-CMD=`rm -rf gnome_shell_extensions_id.txt`
-
+CMD=`rm -rf .gnome_shell_extensions_id.txt`
+ 	
 cnt=0
 
 for i in ${LIST_GNOME_SHELL_EXTENSIONS}
@@ -37,17 +37,17 @@ do
 	then
 		echo ""
 	else
-		echo "${ID_ARRAY[$cnt]}:${i}" >> /home/${USER}/gnome_shell_extensions_id.txt
+		echo "${ID_ARRAY[$cnt]}:${i}" >> /home/${USER}/.gnome_shell_extensions_id.txt
 	fi
 	
 	cnt=$((cnt + 1))
 done
 
 # 恢复 Gnome Shell Extensions 所有设定
-# dconf load /org/gnome/shell/extensions/ < gnome_shell_extensions_conf.txt
+# dconf load /org/gnome/shell/extensions/ < .gnome_shell_extensions_conf.txt
 
 # 将所有 Gnome Shell Extensions 改用预设值
 # dconf reset -f /org/gnome/shell/extensions/
 
 # 备份 Gnome Shell Extensions 所有设定
-dconf dump /org/gnome/shell/extensions/ > /home/${USER}/gnome_shell_extensions_conf.txt
+dconf dump /org/gnome/shell/extensions/ > /home/${USER}/.gnome_shell_extensions_conf.txt

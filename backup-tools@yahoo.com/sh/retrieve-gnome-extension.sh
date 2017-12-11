@@ -9,7 +9,7 @@
 
 ENABLE_ALL_GNOME_SHELL_EXTENSIONS="0"
 
-GNOME_SHELL_EXTENSION_ID_LIST=`cat /home/${USER}/gnome_shell_extensions_id.txt | sed -e "s/:.*//g" | tr "\n" " "`
+GNOME_SHELL_EXTENSION_ID_LIST=`cat /home/${USER}/.gnome_shell_extensions_id.txt | sed -e "s/:.*//g" | tr "\n" " "`
 
 GID=""
 
@@ -47,7 +47,7 @@ done
 if [ "${ENABLE_ALL_GNOME_SHELL_EXTENSIONS}" = "1" ]
 then
 	# Enable all of GNOME Shell Extensions
-	GNOME_SHELL_EXTENSION_UUID_LIST=`cat /home/${USER}/gnome_shell_extensions_id.txt | sed -e "s/^.*://g" | tr "\n" " "`
+	GNOME_SHELL_EXTENSION_UUID_LIST=`cat /home/${USER}/.gnome_shell_extensions_id.txt | sed -e "s/^.*://g" | tr "\n" " "`
 	for ix in ${GNOME_SHELL_EXTENSION_UUID_LIST}
 	do
 		gnome-shell-extension-tool -e ${ix}
@@ -55,7 +55,7 @@ then
 fi
 
 # 恢复 Gnome Shell Extensions 所有设定
-dconf load /org/gnome/shell/extensions/ < /home/${USER}/gnome_shell_extensions_conf.txt
+dconf load /org/gnome/shell/extensions/ < /home/${USER}/.gnome_shell_extensions_conf.txt
 
 # restart gnome-shell
 # dbus-send --type=method_call --print-reply --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'global.reexec_self()'
