@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="backup-tools">
+	<enum id="org.gnome.shell.extensions.backup-tools.position">
+		<value value="0" nick="left"/>
+		<value value="1" nick="center"/>
+		<value value="2" nick="right"/>
+	</enum>
+	<enum id="org.gnome.shell.extensions.backup-tools.icon-size">
+		<value value="0" nick="16"/>
+		<value value="1" nick="24"/>
+		<value value="2" nick="32"/>
+		<value value="3" nick="48"/>
+		<value value="4" nick="64"/>
+	</enum>
+
+	<schema path="/org/gnome/shell/extensions/backup-tools/" id="org.gnome.shell.extensions.backup-tools">
+		<key type='s' name="path">
+			<default>""</default>
+			<summary>Path</summary>
+		</key>
+		<key name="position-in-panel" enum="org.gnome.shell.extensions.backup-tools.position">
+			<default>'right'</default>
+			<summary>Position in Panel</summary>
+		</key>
+		<key name="icon-size" enum="org.gnome.shell.extensions.backup-tools.icon-size">
+			<default>'16'</default>
+			<summary>Icon Size</summary>
+		</key>
+	</schema>
+</schemalist>
