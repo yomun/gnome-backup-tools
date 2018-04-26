@@ -5,17 +5,18 @@
 ![Screencast](https://extensions.gnome.org/extension-data/screenshots/screenshot_1312.png)
 
 ## Requirements
-#### Ubuntu / Linux Mint / Debian / Zorin OS<br>
-$ sudo apt install curl<br>
-<br>
-Others Linux Distribution also need to install "curl" package..<br>
-<br>
+#### Ubuntu / Linux Mint / Debian / Zorin OS
+```
+$ sudo apt install curl
 
-## Installation<br>
-$ git clone https://github.com/yomun/gnome-backup-tools<br>
-$ cd gnome-backup-tools<br>
-$ mv backup-tools@yahoo.com ~/.local/share/gnome-shell/extensions<br>
-<br>
+Others Linux Distribution also need to install "curl" package..
+```
+## Installation
+```
+$ git clone https://github.com/yomun/gnome-backup-tools
+$ cd gnome-backup-tools
+$ mv backup-tools@yahoo.com ~/.local/share/gnome-shell/extensions
+```
 After 'Backup', you will get 2 files (gnome_shell_extensions_id.txt & gnome_shell_extensions_conf.txt)<br>
 These files will help you retrieve your GNOME Shell Extensions
 
