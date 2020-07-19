@@ -22,6 +22,6 @@ These files will help you retrieve your GNOME Shell Extensions
 
 ## License
 
-Copyright &copy; 2017 - 2020 Jason Mun (<jasonmun@yahoo.com>)
+Copyright &copy; 2017-2020 Jason Mun (<jasonmun@yahoo.com>)
 
 Released under the terms of the [GNU General Public License, version 3](https://gnu.org/licenses/gpl.html)
