@@ -17,7 +17,7 @@ $ git clone https://github.com/yomun/gnome-backup-tools
 $ cd gnome-backup-tools
 $ mv backup-tools@yahoo.com ~/.local/share/gnome-shell/extensions
 ```
-After 'Backup', you will get 2 files (gnome_shell_extensions_id.txt & gnome_shell_extensions_conf.txt)<br>
+After 'Backup', you will get 3 files (e.g: gnome_shell_extensions_id.txt / gnome_shell_extensions_conf.txt)<br>
 These files will help you retrieve your GNOME Shell Extensions
 
 ## License
